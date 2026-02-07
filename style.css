@@ -1,0 +1,59 @@
+/* General Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d6eff8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* The Shelf Layout */
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Individual Book Cards */
+.book-card {
+    background: rgb(241, 240, 240);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 260px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Makes it pop! */
+}
+
+.book-card:hover {
+    transform: translateY(-10px); /* Lifts card on hover */
+}
+
+.book-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 10px;
+}
+
+.tag {
+    font-size: 0.8rem;
+    background: #e0e0e0;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
